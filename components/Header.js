@@ -42,7 +42,7 @@ function Header() {
 
 	const handleConnection = () => {
 
-		fetch('https://morningnews-back-five.vercel.app/&users/signin', {
+		fetch('https://morningnews-back-five.vercel.app/users/signin', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({ username: signInUsername, password: signInPassword }),
